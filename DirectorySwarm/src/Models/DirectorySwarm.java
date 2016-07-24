@@ -160,11 +160,8 @@ public class DirectorySwarm {
 				if(!node.getEdges().isEmpty()){
 					if(options[1].isSelected()){
 						SwarmSearchAndCreateDirs(DirAbsPath, node, options);
-						System.out.println("ON"+DirAbsPath);
-
 					}else{ 
 						SwarmSearchAndCreateDirs(auxString, node, options);
-						System.out.println("OFF"+auxString);
 					}
 				}
 			}
