@@ -41,7 +41,6 @@ public class DirectorySwarm {
 						String[] aux = line.split("\t");
 						line = "";
 						for(String newLine : aux){if(newLine.equals(""))line += "..\\";else line += newLine;}
-						System.out.println(line);
 					}
 					ArrayList[] linesRef = (ArrayList[]) Array.newInstance(lines.getClass(), 1);
 					linesRef[0]=lines;
@@ -66,7 +65,6 @@ public class DirectorySwarm {
 		
 		for(DirNode<String> node : graph.getEdges()){
 												
-			System.out.print(node.getId()+" : "+node.getValue()+"  -->  ");
 			DefaultMutableTreeNode aux = new DefaultMutableTreeNode(node);
 			
 			DefaultMutableTreeNode[] auxRef = new DefaultMutableTreeNode[1];
@@ -87,7 +85,6 @@ public class DirectorySwarm {
 		Iterator<?> it = directories[0].iterator();
 		boolean lastIterationFlag = false;
 		String line = "";
-		int i = 0;
 		while(it.hasNext()){
 			if(lastIterationFlag){
 				lastIterationFlag = false;
@@ -127,7 +124,6 @@ public class DirectorySwarm {
 				else {
 					tree[0].addNode(new DirNode<String>(++id,line));
 				}
-				System.out.println(line);
 
 			} 
 
