@@ -136,7 +136,7 @@ public class DirectorySwarm {
 		if(currentDir != null){
 			for(DirNode<String> node : currentDir.getEdges()){
 				String auxString = DirAbsPath;
-;
+
 				if(node.isDir()){
 					if(!options[1].isSelected()){
 						auxString+=node.getValue();

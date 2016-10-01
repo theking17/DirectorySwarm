@@ -10,3 +10,6 @@ outra_pasta1\
 		outro2.txt
 	outra_pasta3\
 		outro3.txt
+		outro4.txt
+		outra_pasta4\
+			lol.txt
