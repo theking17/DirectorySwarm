@@ -44,7 +44,7 @@ public class SwarmMenu {
 	private JPanel panelOne;
 	private JTextField textField;
 	private String mainNodeName = "Target Directory";
-	private Path defaultPath = FileSystems.getDefault().getPath(Paths.get("").toAbsolutePath().toString()+"\\src\\SwarmThis.txt");
+	private final Path defaultPath = FileSystems.getDefault().getPath(Paths.get("").toAbsolutePath().toString()+"\\src\\SwarmThis.txt");
  	private JCheckBox[] options;
 	private JLabel warning;
 	private JTextArea textArea;

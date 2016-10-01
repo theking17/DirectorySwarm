@@ -17,7 +17,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 public class DirectorySwarm {
 
 	private final String SOURCE_PATH = Paths.get("").toAbsolutePath().toString()+"\\src\\";
-	private static int id = 100;
+	private static int id = 101;
 	private static DirNode<String> dirStructure;
 	
 	public DefaultMutableTreeNode LoadTreeNode(String nodeName){
@@ -25,6 +25,7 @@ public class DirectorySwarm {
 		Path path = null;
 
 			path = FileSystems.getDefault().getPath(SOURCE_PATH+"SwarmThis.txt");
+
 			if(Files.isReadable(path)){flag=true;}
 			else{
 				Scanner s = new Scanner(System.in);
