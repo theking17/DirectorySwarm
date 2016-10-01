@@ -1,0 +1,15 @@
+teste1\
+	teste2\
+	teste3\
+otra_pasta\
+	mais_pastas\
+		arquivo.txt
+outra_pasta1\
+	outro1.txt
+	outra_pasta2\
+		outro2.txt
+	outra_pasta3\
+		outro3.txt
+		outro4.txt
+		outra_pasta4\
+			lol.txt
